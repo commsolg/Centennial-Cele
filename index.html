@@ -5,33 +5,37 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Young+Serif&display=swap">
 <style>
 :root{
-  --bg:#f5f8f7; --surface:#ffffff; --fg:#10272b; --muted:#4d6468; --line:#d3e0de;
-  --teal:#0d7f86; --teal-deep:#08474d; --on-teal:#ffffff; --gold:#e3a72f; --no:#9b2c2c; --ok:#1f6b45;
+  /* Palette taken from the flyer: royal/navy blue, mauve fade, chalice gold, maroon band */
+  --bg:#f4f6fb; --surface:#ffffff; --fg:#0e2140; --muted:#4a5b7a; --line:#d5deee;
+  --accent:#1c4f9c; --navy:#0b2f63; --mauve:#7a4f8a; --on-accent:#ffffff;
+  --gold:#e3b323; --maroon:#8f1b24; --no:#9b2c2c; --ok:#1f6b45;
   --display:'Young Serif', Georgia, 'Times New Roman', serif;
   --body:'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0c1a1c; --surface:#142a2d; --fg:#e7f1f0; --muted:#9db8ba; --line:#274347;
-    --teal:#4cc3ca; --teal-deep:#06363b; --on-teal:#06222a; --gold:#f0bd54; --no:#f19a9a; --ok:#7bd3a0; color-scheme: dark;
+    --bg:#08142b; --surface:#102246; --fg:#eaf0fb; --muted:#a6b7d6; --line:#274270;
+    --accent:#86b4f0; --navy:#0a2a5c; --mauve:#6a4580; --on-accent:#08142b;
+    --gold:#efc23a; --maroon:#7a1620; --no:#f19a9a; --ok:#7bd3a0; color-scheme: dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0c1a1c; --surface:#142a2d; --fg:#e7f1f0; --muted:#9db8ba; --line:#274347;
-  --teal:#4cc3ca; --teal-deep:#06363b; --on-teal:#06222a; --gold:#f0bd54; --no:#f19a9a; --ok:#7bd3a0; color-scheme: dark;
+  --bg:#08142b; --surface:#102246; --fg:#eaf0fb; --muted:#a6b7d6; --line:#274270;
+  --accent:#86b4f0; --navy:#0a2a5c; --mauve:#6a4580; --on-accent:#08142b;
+  --gold:#efc23a; --maroon:#7a1620; --no:#f19a9a; --ok:#7bd3a0; color-scheme: dark;
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:70px}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.55;margin:0}
-a{color:var(--teal)}
+a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
 .wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
 p{margin:0}
 body[data-lang="en"] .es, body[data-lang="es"] .en{display:none !important}
 
-/* sticky countdown + language bar */
+/* sticky countdown + language bar (flyer's gold band) */
 .topbar{position:sticky;top:0;z-index:20;background:var(--gold);color:#2a1d00;padding-top:env(safe-area-inset-top,0px)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:9px}
 .cd{font-weight:700;line-height:1.3}
@@ -40,18 +44,16 @@ body[data-lang="en"] .es, body[data-lang="es"] .en{display:none !important}
 .lang button{font:inherit;font-weight:700;font-size:15px;border:0;background:transparent;color:#2a1d00;padding:6px 14px;cursor:pointer;min-height:36px}
 .lang button[aria-pressed="true"]{background:#2a1d00;color:#fff}
 
-.hero{background:var(--teal-deep);color:#fff;padding-block:44px 40px}
-:root:not([data-theme="light"]) .hero{color:var(--fg)}
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .hero{color:#fff}}
-:root[data-theme="light"] .hero{color:#fff}
+/* hero: blue sky fading to mauve, like the flyer */
+.hero{background:linear-gradient(180deg,var(--navy) 0%,#1f4f8f 45%,var(--mauve) 100%);color:#fff;padding-block:44px 40px}
 .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-bottom:14px}
 .hero h1{font-size:clamp(38px,8vw,72px);max-width:14ch}
-.hero .sub{margin-top:16px;max-width:52ch;font-size:19px;opacity:.95}
+.hero .sub{margin-top:16px;max-width:52ch;font-size:19px;opacity:.97}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:28px}
-.fact{border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:14px 16px}
+.fact{border:1px solid rgba(255,255,255,.32);background:rgba(8,25,60,.28);border-radius:10px;padding:14px 16px}
 .fact b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
 .fact span.v{font-family:var(--display);font-size:24px;line-height:1.2;display:block}
-.fact small{display:block;font-size:14px;opacity:.9;margin-top:2px}
+.fact small{display:block;font-size:14px;opacity:.92;margin-top:2px}
 
 section{padding-block:44px}
 section + section{border-top:1px solid var(--line)}
@@ -61,13 +63,13 @@ section + section{border-top:1px solid var(--line)}
 
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;list-style:none;padding:0;margin:0;counter-reset:s}
 .step{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;counter-increment:s}
-.step::before{content:counter(s);font-family:var(--display);font-size:20px;width:36px;height:36px;border-radius:50%;background:var(--teal);color:var(--on-teal);display:grid;place-items:center}
+.step::before{content:counter(s);font-family:var(--display);font-size:20px;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center}
 .step h3{font-size:23px}
 .step p{color:var(--muted)}
 .step .meta{font-weight:600;color:var(--fg)}
 .btn{display:inline-block;margin-top:auto;align-self:flex-start;background:var(--gold);color:#2a1d00;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:8px}
 .btn:hover{filter:brightness(1.06)}
-.btn.alt{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
 .step .btn{margin-top:6px}
 .shirt{display:flex;align-items:center;gap:8px}
 .swatch{width:14px;height:14px;border-radius:50%;background:#1fa5a8;border:2px solid var(--line);flex:none}
@@ -82,7 +84,7 @@ section + section{border-top:1px solid var(--line)}
 .yes li,.no li{padding-left:28px;position:relative;margin-bottom:7px}
 .yes li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
 .no li::before{content:"✕";position:absolute;left:0;color:var(--no);font-weight:700}
-.note{margin-top:6px;padding:14px 16px;border-left:4px solid var(--gold);background:var(--surface);border-radius:0 8px 8px 0;max-width:70ch}
+.note{margin-top:6px;padding:14px 16px;border-left:4px solid var(--maroon);background:var(--surface);border-radius:0 8px 8px 0;max-width:70ch}
 
 figure{margin:0}
 .mapbox{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px}
@@ -100,7 +102,7 @@ figcaption{font-size:14px;color:var(--muted);margin-top:10px;padding-inline:4px}
 
 .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .vid{display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--fg)}
-.vid .screen{aspect-ratio:16/9;max-width:100%;border-radius:8px;background:var(--teal-deep);display:grid;place-items:center}
+.vid .screen{aspect-ratio:16/9;max-width:100%;border-radius:8px;background:linear-gradient(180deg,var(--navy),var(--mauve));display:grid;place-items:center}
 .vid .play{width:64px;height:64px;border-radius:50%;background:var(--gold);display:grid;place-items:center}
 .vid .play::after{content:"";border-left:20px solid #2a1d00;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
 .vid:hover .play{transform:scale(1.06)}
@@ -108,10 +110,8 @@ figcaption{font-size:14px;color:var(--muted);margin-top:10px;padding-inline:4px}
 .vid span.s{color:var(--muted);font-size:14px}
 @media (prefers-reduced-motion:no-preference){.play{transition:transform .15s}}
 
-footer{background:var(--teal-deep);color:#fff;padding-block:36px}
-:root:not([data-theme="light"]) footer{color:var(--fg)}
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) footer{color:#fff}}
-:root[data-theme="light"] footer{color:#fff}
+/* footer: the flyer's maroon band with a gold rule */
+footer{background:var(--maroon);color:#fff;padding-block:36px;border-top:6px solid var(--gold)}
 footer a{color:var(--gold)}
 footer p + p{margin-top:8px}
 </style></head>
