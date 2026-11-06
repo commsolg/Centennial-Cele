@@ -1,3 +1,24 @@
+Claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index · HTML
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -34,7 +55,7 @@ a{color:var(--accent)}
 h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
 p{margin:0}
 body[data-lang="en"] .es, body[data-lang="es"] .en{display:none !important}
-
+ 
 /* sticky countdown + language bar (flyer's gold band) */
 .topbar{position:sticky;top:0;z-index:20;background:var(--gold);color:#2a1d00;padding-top:env(safe-area-inset-top,0px)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:9px}
@@ -43,7 +64,7 @@ body[data-lang="en"] .es, body[data-lang="es"] .en{display:none !important}
 .lang{display:flex;flex:none;border:2px solid #2a1d00;border-radius:999px;overflow:hidden}
 .lang button{font:inherit;font-weight:700;font-size:15px;border:0;background:transparent;color:#2a1d00;padding:6px 14px;cursor:pointer;min-height:36px}
 .lang button[aria-pressed="true"]{background:#2a1d00;color:#fff}
-
+ 
 /* hero: blue sky fading to mauve, like the flyer */
 .hero{background:linear-gradient(180deg,var(--navy) 0%,#1f4f8f 45%,var(--mauve) 100%);color:#fff;padding-block:44px 40px}
 .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-bottom:14px}
@@ -54,13 +75,13 @@ body[data-lang="en"] .es, body[data-lang="es"] .en{display:none !important}
 .fact b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
 .fact span.v{font-family:var(--display);font-size:24px;line-height:1.2;display:block}
 .fact small{display:block;font-size:14px;opacity:.92;margin-top:2px}
-
+ 
 section{padding-block:44px}
 section + section{border-top:1px solid var(--line)}
 .sec-head{margin-bottom:22px;max-width:60ch}
 .sec-head h2{font-size:clamp(28px,4.5vw,40px)}
 .sec-head p{margin-top:10px;color:var(--muted)}
-
+ 
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;list-style:none;padding:0;margin:0;counter-reset:s}
 .step{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;counter-increment:s}
 .step::before{content:counter(s);font-family:var(--display);font-size:20px;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center}
@@ -73,7 +94,7 @@ section + section{border-top:1px solid var(--line)}
 .step .btn{margin-top:6px}
 .shirt{display:flex;align-items:center;gap:8px}
 .swatch{width:14px;height:14px;border-radius:50%;background:#1fa5a8;border:2px solid var(--line);flex:none}
-
+ 
 /* must-know cards */
 .card{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:12px;padding:20px;margin-bottom:14px}
 .card h3{font-size:22px;margin-bottom:8px}
@@ -85,7 +106,7 @@ section + section{border-top:1px solid var(--line)}
 .yes li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
 .no li::before{content:"✕";position:absolute;left:0;color:var(--no);font-weight:700}
 .note{margin-top:6px;padding:14px 16px;border-left:4px solid var(--maroon);background:var(--surface);border-radius:0 8px 8px 0;max-width:70ch}
-
+ 
 figure{margin:0}
 .mapbox{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px}
 .mapbox img{display:block;width:100%;height:auto;border-radius:6px}
@@ -93,13 +114,13 @@ figcaption{font-size:14px;color:var(--muted);margin-top:10px;padding-inline:4px}
 .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 20px;list-style:none;padding:0;margin:20px 0 0}
 .legend li{display:flex;gap:10px;align-items:center;font-size:16px}
 .chip{width:16px;height:16px;border-radius:4px;flex:none;border:1px solid rgba(0,0,0,.25)}
-
-.kbyg{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:28px;align-items:start}
+ 
+.kbyg{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}
 .kbyg a.thumb{display:block;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:10px}
 .kbyg img{display:block;width:100%;height:auto}
 .kbyg .btn{margin-top:16px}
 @media (max-width:700px){.kbyg{grid-template-columns:1fr}.kbyg a.thumb{max-width:320px}}
-
+ 
 .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .vid{display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--fg)}
 .vid .screen{aspect-ratio:16/9;max-width:100%;border-radius:8px;background:linear-gradient(180deg,var(--navy),var(--mauve));display:grid;place-items:center}
@@ -109,14 +130,14 @@ figcaption{font-size:14px;color:var(--muted);margin-top:10px;padding-inline:4px}
 .vid strong{font-size:18px}
 .vid span.s{color:var(--muted);font-size:14px}
 @media (prefers-reduced-motion:no-preference){.play{transition:transform .15s}}
-
+ 
 /* footer: the flyer's maroon band with a gold rule */
 footer{background:var(--maroon);color:#fff;padding-block:36px;border-top:6px solid var(--gold)}
 footer a{color:var(--gold)}
 footer p + p{margin-top:8px}
 </style></head>
 <body data-lang="en">
-
+ 
 <div class="topbar" role="region" aria-label="Countdown and language">
   <div class="wrap">
     <div class="cd" id="cd" aria-live="polite"></div>
@@ -126,21 +147,23 @@ footer p + p{margin-top:8px}
     </div>
   </div>
 </div>
-
+ 
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow"><span class="en">Archdiocese of San Antonio · 1926 to 2026</span><span class="es">Arquidiócesis de San Antonio · 1926 a 2026</span></div>
     <h1><span class="en">Centennial Celebration</span><span class="es">Celebración del Centenario</span></h1>
-    <p class="sub"><span class="en">Join our parish at Nelson W. Wolff Stadium for the Centennial Mass and the proclamation of the new Pastoral Vision. Admission is free and everyone is welcome.</span><span class="es">Acompaña a nuestra parroquia en el Estadio Nelson W. Wolff para la Misa del Centenario y la proclamación de la nueva Visión Pastoral. La entrada es gratuita y todos son bienvenidos.</span></p>
+    <p class="sub"><span class="en">Join our parish at Greehey Arena at St. Mary’s University for the Centennial Mass, celebrated by Archbishop Gustavo García-Siller, MSpS, with the proclamation of the new Pastoral Vision. Admission is free and everyone is welcome.</span><span class="es">Acompaña a nuestra parroquia en el Greehey Arena de la Universidad de St. Mary’s para la Misa del Centenario, celebrada por el Arzobispo Gustavo García-Siller, MSpS, con la proclamación de la nueva Visión Pastoral. La entrada es gratuita y todos son bienvenidos.</span></p>
     <div class="facts">
       <div class="fact"><b><span class="en">Date</span><span class="es">Fecha</span></b><span class="v"><span class="en">Saturday, Nov 7</span><span class="es">Sábado 7 de nov.</span></span></div>
+      <div class="fact"><b><span class="en">Arrive by</span><span class="es">Llegar a las</span></b><span class="v">2:30 pm</span><small><span class="en">Requested by the Archbishop</span><span class="es">Solicitado por el Arzobispo</span></small></div>
       <div class="fact"><b><span class="en">Doors open</span><span class="es">Abren las puertas</span></b><span class="v">3:00 pm</span></div>
+      <div class="fact"><b><span class="en">Procession</span><span class="es">Procesión</span></b><span class="v">3:30 pm</span><small><span class="en">Pre-liturgical procession</span><span class="es">Procesión preliturgica</span></small></div>
       <div class="fact"><b><span class="en">Mass begins</span><span class="es">Comienza la Misa</span></b><span class="v">4:00 pm</span></div>
-      <div class="fact"><b><span class="en">Place</span><span class="es">Lugar</span></b><span class="v">Wolff Stadium</span><small>5757 W. US Highway 90, San Antonio, TX 78227</small></div>
+      <div class="fact"><b><span class="en">New location</span><span class="es">Nuevo lugar</span></b><span class="v">Greehey Arena</span><small>St. Mary’s University, One Camino Santa Maria, San Antonio, TX 78228 · <a href="https://maps.app.goo.gl/w2dgGuCN8VCTEZYZ9" target="_blank" rel="noopener" style="color:var(--gold)"><span class="en">Open in Maps</span><span class="es">Abrir en Mapas</span></a></small></div>
     </div>
   </div>
 </header>
-
+ 
 <main>
 <section id="plan"><div class="wrap">
   <div class="sec-head"><h2><span class="en">Get ready</span><span class="es">Prepárate</span></h2>
@@ -163,21 +186,21 @@ footer p + p{margin-top:8px}
     </li>
   </ol>
 </div></section>
-
+ 
 <section id="must"><div class="wrap">
   <div class="sec-head"><h2><span class="en">Know before you go</span><span class="es">Lo esencial antes de ir</span></h2>
   <p><span class="en">These are the stadium’s rules for every guest. A little preparation makes the day joyful.</span><span class="es">Estas son las reglas del estadio para todos los asistentes. Un poco de preparación hace el día más alegre.</span></p></div>
-
+ 
   <div class="card">
-    <h3><span class="en">Gates and arrival</span><span class="es">Puertas y llegada</span></h3>
-    <p class="en">Gates open at <b>3 pm</b>. Please arrive early: screening takes time.</p>
-    <p class="es">Las puertas abren a las <b>3 pm</b>. Llega temprano: la revisión toma tiempo.</p>
-    <p class="en">Use the <b>Third Base Gate</b> or the <b>Home Plate Gate</b>. Both are accessible. Everyone walks through a metal detector, so be ready to remove keys and phones, and every bag is inspected. If you leave and return, you will be screened again.</p>
-    <p class="es">Usa la <b>Puerta de Tercera Base</b> o la <b>Puerta de Home Plate</b>. Ambas son accesibles. Todos pasan por un detector de metales, así que prepárate para sacar llaves y teléfonos, y se revisa cada bolsa. Si sales y regresas, te revisarán de nuevo.</p>
+    <h3><span class="en">Doors and arrival</span><span class="es">Puertas y llegada</span></h3>
+    <p class="en">The Archbishop requests that you arrive by <b>2:30 pm</b>. Doors open at <b>3 pm</b>, the pre-liturgical procession is at <b>3:30 pm</b>, and Mass begins at <b>4 pm</b>. Please arrive early: screening takes time.</p>
+    <p class="es">El Arzobispo solicita que llegues a las <b>2:30 pm</b>. Las puertas abren a las <b>3 pm</b>, la procesión preliturgica es a las <b>3:30 pm</b> y la Misa comienza a las <b>4 pm</b>. Llega temprano: la revisión toma tiempo.</p>
+    <p class="en">Everyone walks through a metal detector, so be ready to remove keys and phones, and every bag is inspected. If you leave and return, you will be screened again.</p>
+    <p class="es">Todos pasan por un detector de metales, así que prepárate para sacar llaves y teléfonos, y se revisa cada bolsa. Si sales y regresas, te revisarán de nuevo.</p>
     <p class="en">Carpooling is strongly encouraged. It makes parking easier for everyone.</p>
     <p class="es">Se recomienda mucho compartir el auto con familiares y amigos. Facilita el estacionamiento para todos.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Bag policy</span><span class="es">Política de bolsas</span></h3>
     <div class="en"><p>Only two kinds of bags are allowed:</p>
@@ -187,114 +210,86 @@ footer p + p{margin-top:8px}
     <ul class="yes"><li>Bolsa transparente de hasta <b>12 × 12 × 6 pulgadas</b></li><li>Bolso de mano pequeño de hasta <b>5 × 9 pulgadas</b></li><li>Se permiten pañaleras y bolsas médicas, y serán revisadas</li></ul>
     <p><b>No se permiten:</b> mochilas, bolsas y bolsos grandes, maletas deportivas, equipaje, bolsas para cámara y para laptop.</p></div>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Please leave at home</span><span class="es">Por favor, déjalo en casa</span></h3>
     <div class="two en">
       <ul class="no"><li>Weapons of any kind, including licensed firearms and toy or replica weapons</li><li>Outside food and drinks, and alcohol</li><li>Coolers, flasks, glass containers and aerosol cans</li><li>Signs and banners of any kind</li></ul>
-      <ul class="no"><li>Air horns and noisemakers</li><li>Drones and remote-controlled vehicles</li><li>Laser pointers and fireworks</li><li>Sticks, selfie sticks and bats</li><li>Skateboards, skates and scooters</li><li>Beach balls and inflatables</li><li>Lawn chairs (outfield berm only)</li></ul>
+      <ul class="no"><li>Air horns and noisemakers</li><li>Drones and remote-controlled vehicles</li><li>Laser pointers and fireworks</li><li>Sticks, selfie sticks and bats</li><li>Skateboards, skates and scooters</li><li>Beach balls and inflatables</li><li>Lawn chairs</li></ul>
     </div>
     <div class="two es">
       <ul class="no"><li>Armas de cualquier tipo, incluso armas con licencia y armas de juguete o réplicas</li><li>Alimentos y bebidas del exterior, y alcohol</li><li>Hieleras, licoreras de bolsillo, envases de vidrio y aerosoles</li><li>Letreros y pancartas de cualquier tipo</li></ul>
-      <ul class="no"><li>Cornetas de aire y objetos ruidosos</li><li>Drones y vehículos de control remoto</li><li>Punteros láser y fuegos artificiales</li><li>Palos, palos para selfies y bates</li><li>Patinetas, patines y scooters</li><li>Pelotas de playa e inflables</li><li>Sillas de jardín (solo en la ladera del jardín exterior)</li></ul>
+      <ul class="no"><li>Cornetas de aire y objetos ruidosos</li><li>Drones y vehículos de control remoto</li><li>Punteros láser y fuegos artificiales</li><li>Palos, palos para selfies y bates</li><li>Patinetas, patines y scooters</li><li>Pelotas de playa e inflables</li><li>Sillas de jardín</li></ul>
     </div>
-    <p class="en">Items found at the gate cannot be held for you. You are welcome to return them to your car and come back.</p>
-    <p class="es">Los objetos prohibidos no se pueden guardar en la puerta. Puedes llevarlos a tu vehículo y regresar.</p>
+    <p class="en">Items found at the door cannot be held for you. You are welcome to return them to your car and come back.</p>
+    <p class="es">Los objetos prohibidos no se pueden guardar en la entrada. Puedes llevarlos a tu vehículo y regresar.</p>
   </div>
-
+ 
   <div class="note">
-    <p class="en"><b>Water, food and medications.</b> Bring your own water bottle (not glass); water stations will be available for refills. Bottled water will not be distributed. The Centennial is first a Mass, so <b>concession stands will be closed</b>. Baby bottles, formula and snacks for small children are welcome. Necessary medications and related snacks are allowed; keep them in their original containers when possible and declare them at screening.</p>
-    <p class="es"><b>Agua, comida y medicamentos.</b> Trae tu botella de agua personal (que no sea de vidrio); habrá estaciones de agua para rellenar. No se repartirá agua embotellada. El Centenario es, ante todo, una Misa, por eso <b>los puestos de comida estarán cerrados</b>. Se permiten biberones, fórmula y bocadillos para niños pequeños. Se permiten los medicamentos necesarios y los alimentos relacionados; consérvalos en sus envases originales si es posible y decláralos en la revisión.</p>
+    <p class="en"><b>Water, food and medications.</b> Bring your own water bottle (not glass); water stations will be available for refills. Bottled water will not be distributed. Baby bottles, formula and snacks for small children are welcome. Necessary medications and related snacks are allowed; keep them in their original containers when possible and declare them at screening.</p>
+    <p class="es"><b>Agua, comida y medicamentos.</b> Trae tu botella de agua personal (que no sea de vidrio); habrá estaciones de agua para rellenar. No se repartirá agua embotellada. Se permiten biberones, fórmula y bocadillos para niños pequeños. Se permiten los medicamentos necesarios y los alimentos relacionados; consérvalos en sus envases originales si es posible y decláralos en la revisión.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Families and children</span><span class="es">Familias y niños</span></h3>
     <p class="en">Families with children under 14 receive a free family Mass bag with a children’s Mass guide and activity sheet, in English and Spanish, while supplies last.</p>
     <p class="es">Las familias con niños menores de 14 años reciben gratis una bolsa familiar con una guía de la Misa para niños y una hoja de actividades, en inglés y español, hasta agotar existencias.</p>
-    <p class="en">Minors must stay with their parents at all times. If you are separated, tell an usher or police officer and meet at the <b>Convenience Center</b> on the concourse by the Home Plate Gate. The <b>Family Zone</b> is on the third base side, with stroller parking. Every restroom has a baby changing station.</p>
-    <p class="es">Los menores deben permanecer con sus padres en todo momento. Si se separan, avisen a un acomodador o a un oficial de policía y reúnanse en el <b>Centro de Servicios (Convenience Center)</b>, en el pasillo cerca de la Puerta de Home Plate. La <b>Zona Familiar</b> está del lado de tercera base, con estacionamiento para cochecitos. Todos los baños tienen cambiador para bebés.</p>
+    <p class="en">Minors must stay with their parents at all times. If you are separated, tell an usher or police officer right away.</p>
+    <p class="es">Los menores deben permanecer con sus padres en todo momento. Si se separan, avisen de inmediato a un acomodador o a un oficial de policía.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Accessibility</span><span class="es">Accesibilidad</span></h3>
-    <p class="en">Both gates are accessible, and accessible parking is in a designated lot near Callaghan Road. Accessible seating and elevators are available; ushers can direct you. <b>Deaf Catholics</b> have reserved seating with dedicated ASL interpreters. Service animals are welcome under ADA guidelines and must stay on a leash or harness. Other animals are not permitted.</p>
-    <p class="es">Ambas puertas son accesibles, y el estacionamiento accesible está en un lote designado cerca de la calle Callaghan. Hay asientos accesibles y elevadores; los acomodadores te pueden guiar. Los <b>católicos sordos</b> tienen asientos reservados con intérpretes de Lengua de Señas Americana (ASL). Se aceptan animales de servicio conforme a las normas de la ADA, y deben ir con correa o arnés. No se permiten otros animales.</p>
+    <p class="en">Accessible seating is available; ushers can direct you. Details on accessible parking and entrances at the new location are coming soon. <b>Deaf Catholics</b> have reserved seating with dedicated ASL interpreters. Service animals are welcome under ADA guidelines and must stay on a leash or harness. Other animals are not permitted.</p>
+    <p class="es">Hay asientos accesibles; los acomodadores te pueden guiar. Pronto compartiremos los detalles sobre estacionamiento y entradas accesibles en el nuevo lugar. Los <b>católicos sordos</b> tienen asientos reservados con intérpretes de Lengua de Señas Americana (ASL). Se aceptan animales de servicio conforme a las normas de la ADA, y deben ir con correa o arnés. No se permiten otros animales.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Safety and conduct</span><span class="es">Seguridad y conducta</span></h3>
-    <p class="en">Police, staff and volunteers with identifying badges will be on site. Medics will be available, with a medic station on the third base concourse. Smoking and vaping are not permitted; to step outside, check in with the gate usher for re-entry. Report any concern to a staff member, usher or officer.</p>
-    <p class="es">Habrá policías, personal y voluntarios con credenciales de identificación. Habrá paramédicos, con una estación médica en el pasillo de tercera base. No se permite fumar ni usar cigarrillos electrónicos; para salir, avisa al acomodador de la puerta para poder reingresar. Reporta cualquier inquietud a un miembro del personal, acomodador u oficial.</p>
+    <p class="en">Police, staff and volunteers with identifying badges will be on site. Medics will be available. Smoking and vaping are not permitted; to step outside, check in with the usher at the door for re-entry. Report any concern to a staff member, usher or officer.</p>
+    <p class="es">Habrá policías, personal y voluntarios con credenciales de identificación. Habrá paramédicos. No se permite fumar ni usar cigarrillos electrónicos; para salir, avisa al acomodador de la entrada para poder reingresar. Reporta cualquier inquietud a un miembro del personal, acomodador u oficial.</p>
     <p class="en">During Mass, please do not walk on the field, throw objects, take phone calls, enter restricted areas, sell or distribute items, or carry anyone on your shoulders. Disruptive guests may be asked to leave.</p>
     <p class="es">Durante la Misa, por favor no camines en el campo, no lances objetos, no contestes llamadas, no entres a áreas restringidas, no vendas ni repartas artículos, y no cargues a nadie sobre los hombros. A quienes causen disturbios se les podrá pedir que se retiren.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Weather and dress</span><span class="es">Clima y vestimenta</span></h3>
     <p class="en">Temperatures are usually in the 80s around 3 pm and the 60s around 7 pm. Sunscreen, sunglasses, hats and umbrellas are welcome, and a light jacket helps for the ride home. Wear lightweight, breathable, dignified clothing. Parish, school or ministry apparel is encouraged.</p>
     <p class="es">Las temperaturas suelen estar en los 80 °F alrededor de las 3 pm y en los 60 °F alrededor de las 7 pm. Se permiten protector solar, lentes de sol, sombreros y paraguas; una chamarra ligera ayuda para el regreso. Usa ropa ligera, que respire y que sea digna. Se anima a usar ropa de la parroquia, la escuela o el ministerio.</p>
   </div>
-
+ 
   <div class="card">
     <h3><span class="en">Photos and media</span><span class="es">Fotos y medios</span></h3>
     <p class="en">Share your photos with <b>#Assembly2026</b> and <b>#CourageousInChrist</b>, and tag @archdioceseofsanantonio and @todayscatholicnewspaper. Drones, telephoto gear and live streaming are not permitted. The event will be photographed and recorded, and attending implies consent; if you prefer not to appear, tell a volunteer.</p>
     <p class="es">Comparte tus fotos con <b>#Assembly2026</b> y <b>#CourageousInChrist</b>, y etiqueta a @archdioceseofsanantonio y @todayscatholicnewspaper. No se permiten drones, equipo de teleobjetivo ni transmisiones en vivo. El evento será fotografiado y grabado, y asistir implica consentimiento; si prefieres no aparecer, díselo a un voluntario.</p>
   </div>
-
+ 
   <div class="card">
-    <h3><span class="en">Convenience Center and lost and found</span><span class="es">Centro de Servicios y objetos perdidos</span></h3>
-    <p class="en">The Convenience Center is on the concourse by the Home Plate Gate. Go there for questions, directions, separated children, accessibility help, concerns, and lost and found. Lost items are held for 15 days; call <b>(210) 734-2620</b>.</p>
-    <p class="es">El Centro de Servicios está en el pasillo cerca de la Puerta de Home Plate. Acude ahí para preguntas, indicaciones, niños separados de sus familias, ayuda de accesibilidad, inquietudes y objetos perdidos. Los objetos perdidos se guardan 15 días; llama al <b>(210) 734-2620</b>.</p>
+    <h3><span class="en">Questions and lost and found</span><span class="es">Preguntas y objetos perdidos</span></h3>
+    <p class="en">Ask any usher or volunteer for help with questions, directions, accessibility and concerns. Lost items are held for 15 days; call <b>(210) 734-2620</b>.</p>
+    <p class="es">Pide ayuda a cualquier acomodador o voluntario para preguntas, indicaciones, accesibilidad e inquietudes. Los objetos perdidos se guardan 15 días; llama al <b>(210) 734-2620</b>.</p>
   </div>
 </div></section>
-
+ 
 <section id="parking"><div class="wrap">
   <div class="sec-head"><h2><span class="en">Where to park</span><span class="es">Dónde estacionarte</span></h2>
-  <p><span class="en">Enter through the entrance for reserved and general parking. Riding the parish bus? Look for the bus stop along the bottom of the map.</span><span class="es">Entra por la entrada de estacionamiento reservado y general. ¿Viajas en el autobús parroquial? Busca la parada de autobús en la parte inferior del mapa.</span></p></div>
-  <figure class="mapbox">
-    <a href="images/parking-map.png" target="_blank" rel="noopener"><img src="images/parking-map.png" alt="Aerial map of the Wolff Stadium parking lots: general parking, handicap parking, staff and volunteer parking, priests, senior staff, bishops and VIP lots, the bus stop and the entrance for reserved and general parking." data-alt-es="Mapa aéreo de los estacionamientos del Estadio Wolff: estacionamiento general, para personas con discapacidad, personal y voluntarios, sacerdotes, personal de alto nivel, obispos y VIP, la parada de autobús y la entrada de estacionamiento reservado y general."></a>
-    <figcaption><span class="en">Nelson W. Wolff Stadium parking map. Pinch to zoom, or tap to open full size.</span><span class="es">Mapa de estacionamiento del Estadio Nelson W. Wolff. Pellizca para ampliar o toca para abrirlo en tamaño completo.</span></figcaption>
-  </figure>
-  <ul class="legend">
-    <li><span class="chip" style="background:#f0e11c"></span><span class="en">General parking</span><span class="es">Estacionamiento general</span></li>
-    <li><span class="chip" style="background:#1fa6e6"></span><span class="en">Handicap parking</span><span class="es">Estacionamiento accesible</span></li>
-    <li><span class="chip" style="background:#c77fc0"></span><span class="en">Staff and volunteer parking</span><span class="es">Personal y voluntarios</span></li>
-    <li><span class="chip" style="background:#4cae4c"></span><span class="en">Parking for priests</span><span class="es">Sacerdotes</span></li>
-    <li><span class="chip" style="background:#e5199b"></span><span class="en">Senior staff parking</span><span class="es">Personal de alto nivel</span></li>
-    <li><span class="chip" style="background:#e8800f"></span><span class="en">VIP parking</span><span class="es">Estacionamiento VIP</span></li>
-    <li><span class="chip" style="background:#2b3f8f"></span><span class="en">Parking for bishops</span><span class="es">Obispos</span></li>
-    <li><span class="chip" style="background:#d62828"></span><span class="en">Bus stop</span><span class="es">Parada de autobús</span></li>
-  </ul>
-  <div class="note" style="margin-top:20px">
-    <p class="en">All cars enter the stadium lots from <b>Callaghan Road</b>. Follow the parking attendants. Buses enter from the <b>US-90 West access road</b>. Rideshare and drop-offs use Callaghan Road. Accessible parking is in a designated lot near Callaghan Road. Lock your car and keep valuables out of sight; the Archdiocese and the stadium are not responsible for loss, theft or damage.</p>
-    <p class="es">Todos los autos entran a los estacionamientos del estadio por la <b>calle Callaghan</b>. Sigue las indicaciones de los encargados. Los autobuses entran por la <b>vía de acceso oeste de la US-90</b>. Los servicios de transporte por aplicación y quienes dejan pasajeros usan la calle Callaghan. El estacionamiento accesible está en un lote designado cerca de la calle Callaghan. Cierra tu auto con llave y no dejes objetos de valor a la vista; la Arquidiócesis y el estadio no se hacen responsables por pérdidas, robos o daños.</p>
-  </div>
+  <p><span class="en">Parking information for Greehey Arena at St. Mary’s University is coming soon. We will post the parking map here as soon as it is ready. Until then, please carpool with family and friends if you can.</span><span class="es">Pronto compartiremos la información de estacionamiento del Greehey Arena en la Universidad de St. Mary’s. Publicaremos el mapa aquí en cuanto esté listo. Mientras tanto, si puedes, comparte el auto con familiares y amigos.</span></p></div>
+  <a class="btn" href="https://maps.app.goo.gl/w2dgGuCN8VCTEZYZ9" target="_blank" rel="noopener"><span class="en">Get directions</span><span class="es">Cómo llegar</span></a>
 </div></section>
-
+ 
 <section id="kbyg"><div class="wrap">
   <div class="sec-head"><h2><span class="en">The full guide</span><span class="es">La guía completa</span></h2>
-  <p><span class="en">The official guide has the full details on everything above. Last updated by the Archdiocese on November 5.</span><span class="es">La guía oficial (en inglés) tiene todos los detalles de lo anterior. Actualizada por la Arquidiócesis el 5 de noviembre.</span></p></div>
+  <p><span class="en">The Archdiocese’s official guide has more details. It may still show the earlier location, so follow the information on this page for the venue.</span><span class="es">La guía oficial de la Arquidiócesis (en inglés) tiene más detalles. Puede que aún muestre el lugar anterior; sigue la información de esta página para el sitio.</span></p></div>
   <div class="kbyg">
-    <a class="thumb" href="https://archsa.org/assembly/know/" target="_blank" rel="noopener" aria-label="Open the Know Before You Go guide">
-      <img src="images/visitor-guide.png" alt="Know Before You Go flyer for the Centennial Celebration at Wolff Stadium, covering arriving and entering, what to leave at home, and food, water and medications." data-alt-es="Folleto Lo que debes saber antes de ir a la Celebración del Centenario en el Estadio Wolff: llegada y entrada, qué dejar en casa, y comida, agua y medicamentos.">
-    </a>
+    
     <div>
-      <p class="en">Questions on the day? Visit the Convenience Center by the Home Plate Gate, or call the Archdiocese of San Antonio at (210) 734-2620. To report misconduct, call (844) 709-1169.</p>
-      <p class="es">¿Preguntas el día del evento? Visita el Centro de Servicios cerca de la Puerta de Home Plate, o llama a la Arquidiócesis de San Antonio al (210) 734-2620. Para reportar conducta inapropiada, llama al (844) 709-1169.</p>
+      <p class="en">Questions on the day? Ask any usher or volunteer, or call the Archdiocese of San Antonio at (210) 734-2620. To report misconduct, call (844) 709-1169.</p>
+      <p class="es">¿Preguntas el día del evento? Pregunta a cualquier acomodador o voluntario, o llama a la Arquidiócesis de San Antonio al (210) 734-2620. Para reportar conducta inapropiada, llama al (844) 709-1169.</p>
       <a class="btn" href="https://archsa.org/assembly/know/" target="_blank" rel="noopener"><span class="en">Read the full guide</span><span class="es">Leer la guía completa</span></a>
     </div>
   </div>
 </div></section>
-
-<section id="layout"><div class="wrap">
-  <div class="sec-head"><h2><span class="en">Inside the stadium</span><span class="es">Dentro del estadio</span></h2>
-  <p><span class="en">The layout for the three processions, with the main stage behind home plate and seating on the field.</span><span class="es">La disposición de las tres procesiones, con el escenario principal detrás de home plate y asientos en el campo.</span></p></div>
-  <figure class="mapbox">
-    <a href="images/stadium-layout.png" target="_blank" rel="noopener"><img src="images/stadium-layout.png" alt="Stadium field layout showing the main stage, choir stage, seminarian and field seating, and the three procession routes: pre-liturgical procession, procession of the Pastoral Vision, and liturgical procession line up." data-alt-es="Plano del campo del estadio con el escenario principal, el escenario del coro, los asientos de seminaristas y del campo, y las tres rutas de procesión: procesión preliturgica, procesión de la Visión Pastoral y fila de la procesión litúrgica."></a>
-    <figcaption><span class="en">1. Pre-liturgical procession · 2. Procession of the Pastoral Vision · 3. Liturgical procession line up. Priests exit from the dugout. Pinch to zoom.</span><span class="es">1. Procesión preliturgica · 2. Procesión de la Visión Pastoral · 3. Fila de la procesión litúrgica. Los sacerdotes salen del dugout. Pellizca para ampliar.</span></figcaption>
-  </figure>
-</div></section>
-
+ 
 <section id="videos"><div class="wrap">
   <div class="sec-head"><h2><span class="en">Watch</span><span class="es">Mira</span></h2>
   <p><span class="en">Two videos about the celebration. They open on YouTube.</span><span class="es">Dos videos sobre la celebración. Se abren en YouTube.</span></p></div>
@@ -304,13 +299,13 @@ footer p + p{margin-top:8px}
   </div>
 </div></section>
 </main>
-
+ 
 <footer><div class="wrap">
-  <p><strong><span class="en">Saturday, November 7 · Doors 3:00 pm · Mass 4:00 pm</span><span class="es">Sábado 7 de noviembre · Puertas 3:00 pm · Misa 4:00 pm</span></strong></p>
-  <p>Nelson W. Wolff Stadium, 5757 W. US Highway 90, San Antonio, TX 78227</p>
+  <p><strong><span class="en">Saturday, November 7 · Arrive 2:30 pm · Doors 3:00 pm · Mass 4:00 pm</span><span class="es">Sábado 7 de noviembre · Llegar 2:30 pm · Puertas 3:00 pm · Misa 4:00 pm</span></strong></p>
+  <p>Greehey Arena, St. Mary’s University, One Camino Santa Maria, San Antonio, TX 78228</p>
   <p><span class="en">Looking for something not listed here? Visit the Archdiocese of San Antonio at</span><span class="es">¿Buscas algo que no aparece aquí? Visita la Arquidiócesis de San Antonio en</span> <a href="https://www.archsa.org/assembly" target="_blank" rel="noopener">archsa.org/assembly</a>.</p>
 </div></footer>
-
+ 
 <script>
 (function(){
   var body=document.body, KEY='olg-lang';
@@ -346,3 +341,4 @@ footer p + p{margin-top:8px}
 })();
 </script>
 </body></html>
+Claude finished the response
